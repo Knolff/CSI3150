@@ -1,0 +1,96 @@
+/*
+selector{
+    cssproperty: value;
+}
+*/
+
+/* IF you want to override the cascading behavior 
+of CSS then use the keyboard !imporant at the end of your styling rule */
+table{
+    background-color: #ec8989;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgba(3, 70, 26, 0.265) !important;
+    
+}
+/* some other styling rules etc */
+
+body{
+    background-color: #5bc4cc2d;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* differnt type of selectors
+1.) HTML tag names
+p, a {
+    color:red; 
+}
+
+2.) to use html attricute id and/or classnames
+when your using the id
+#page_header{
+    color: red;
+    background-color: white;
+
+}
+when you are using the classname attricute as the css selector
+.navOption {
+    color: red;
+}
+
+3.) selecting the adjacent sibiling of a node
+a.) p + a {...}
+b.) #navBar + a{...}
+
+4.) selecting a sibling in the general height of the DOM tree for a given elements
+p ~ a{...}
+
+
+5.) selecting the immediate child of a given tag
+p > a {...}
+
+6.) selecting all child fo a given tag
+p a {...}
+
+7.) specifying dymanic css behavior based on state of the UI
+*/
+a{
+    color:back;
+    font-size: 24;
+    
+}
+a:hover{
+    color: gold;
+    font-size:28
+}
+
+/* 
+8.) pseduo elements
+a::after
+
+*/
+
+*{
+    border: 0;
+    margin: 1;
+    padding: 0;
+}
+/* style the navbar */
+#page_header{
+    background-color: #dff2f3d6 !important;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar a {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
